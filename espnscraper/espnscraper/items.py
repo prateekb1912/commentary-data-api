@@ -6,7 +6,9 @@
 import scrapy
 
 
-class EspnscraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class BallDataItem(scrapy.Item):
+    overNumber = scrapy.Field()
+    ballNumber = scrapy.Field()
+    totalRuns = scrapy.Field()
+    inningsRuns = scrapy.Field()
+    inningsWickets = scrapy.Field()
