@@ -7,6 +7,7 @@ import scrapy
 
 
 class BallDataItem(scrapy.Item):
+    inning = scrapy.Field()
     overNumber = scrapy.Field()
     ballNumber = scrapy.Field()
     totalRuns = scrapy.Field()
