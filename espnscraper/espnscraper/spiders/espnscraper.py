@@ -14,8 +14,6 @@ class ESPNCommentarySpider(scrapy.Spider):
         
         comments = results['comments']
 
-        print(results['nextInningOver'])
-
         for comment in comments:
             item = BallDataItem()
 
